@@ -45,7 +45,7 @@ body {
 	margin: 0;
 	font-family: Avenir,avenir next lt pro,Montserrat,Corbel,urw gothic,source-sans-pro,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
 	font-size: 16px;
-	/*font-size: .875rem;*/
+	font-size: .9rem;
 	line-height: 1.6;
 	word-wrap: break-word;
 	background: #f7f7f7;
@@ -55,7 +55,7 @@ body {
 .container {
 	position: relative;
 	width: 100%;
-	max-width: 1080px;
+	max-width: 970px;
 	margin: 0 auto;
 }
 
@@ -159,12 +159,12 @@ h6 {
 
 h1 {
 	font-size: 32px;
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 
 h2 {
 	font-size: 24px;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 h3 {
