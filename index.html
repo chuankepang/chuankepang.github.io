@@ -1,0 +1,840 @@
+<html>
+  <head>
+    <title>James Xu</title>
+    <meta name="author" content="James Xu" />
+    <meta name="description" content="James (Jingxi) Xu. My research focuses on machine learning and robotics." />
+    <meta
+      name="keywords"
+      content="James, Jingxi, James Xu, Jingxi Xu, James (Jingxi) Xu, Computer Science, Vision, Robotics, Machine,Learning, Columbia. Shuran Song, Matei Ciocarlie, Reinforcement Learning, Stanford, Columbia"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNR855GC8P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SNR855GC8P");
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container container-nav">
+        <div class="site-title">
+          <h1>James Xu</h1>
+          <!-- if you want to enable subtitle, you need to remove site-title class in css -->
+          <!-- <p class="subtitle">On quest for machines that can learn 🤖🦾🦿</p> -->
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="current-page">Home</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#talks">Talks</a></li>
+            <li><a href="#mentoring">Mentoring</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#misc">Misc</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="namecard">
+        <div class="profile-img-col">
+          <img src="imgs/me-v5.jpg" class="profile-img" alt="" />
+        </div>
+        <div class="affiliations-col">
+          <h1 class="name">James (Jingxi) Xu</h1>
+          <p class="email">jxu at cs dot columbia dot edu</p>
+          <p>
+            Senior Research Scientist
+            <br />
+            Ant Group
+          </p>
+
+          <p>
+            Visiting Postdoctoral Scholar
+            <br />
+            <a href="http://bdml.stanford.edu/Main/HomePage">Biomimetics & Dexterous Manipulation Laboratory <span class="mobhide">(BDML)</span></a>
+            <br />
+            Stanford University
+          </p>
+          <p>
+            <a href="https://scholar.google.com/citations?user=DZ-WjTIAAAAJ&hl=en">Google Scholar</a>
+            / <a href="https://github.com/jingxixu">GitHub</a> / <a href="https://twitter.com/drjingxi">X (Twitter)</a> /
+            <a href="https://www.linkedin.com/in/jingxixu/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="about">
+        <!-- <h1>About</h1> -->
+        <p>
+          I am a Senior Research Scientist at <a href="https://en.wikipedia.org/wiki/Ant_Group">Ant Group</a>, and I am also a Visiting Postdoctoral Scholar with
+          <a href="https://profiles.stanford.edu/mark-cutkosky">Mark Cutkosky</a> at <a href="https://stanford.edu">Stanford</a>. Before that, I was a Research Scientist at the
+          <a href="https://theaiinstitute.com/">Boston Dynamics AI Institute</a> (a.k.a. the RAI Institute). I obtained my PhD in Computer Science from <a href="https://columbia.edu">Columbia</a>,
+          where I was co-advised by <a href="https://roam.me.columbia.edu/people/matei-ciocarlie">Matei Ciocarlie</a> (Columbia) and <a href="https://shurans.github.io/">Shuran Song</a> (Stanford). I
+          received my bachelor’s degree from <a href="https://www.ed.ac.uk">Edinburgh</a>, with First Class Honours and Class Medal (overall grade ranks first in class), and I received an MS from
+          Columbia, where I worked closely with Professor <a href="https://www.cs.columbia.edu/~allen">Peter Allen</a>. I also spent some time at <a href="http://www.mit.edu">MIT</a> (with
+          <a href="http://people.csail.mit.edu/lpk">Leslie Pack Kaelbling</a> and <a href="http://people.csail.mit.edu/tlp">Tomás Lozano-Pérez</a>) and <a href="https://columbia.edu">UPenn</a> (with
+          <a href="https://www.seas.upenn.edu/~dineshj/">Dinesh Jayaraman</a>
+          and <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>).
+        </p>
+
+        <p>
+          My research focuses are <b>robotics</b>, <b>machine learning</b> and <b>healthcare</b>. My most recent line of work [<a href="https://jxu.ai/chatemg/">RA-L'24</a>,
+          <a href="https://arxiv.org/abs/2403.13147">IROS'24</a>, <a href="https://arxiv.org/abs/2011.00034">ICRA'22</a>] builds <b>wearable assistive and rehabilitation robots</b> that use machine
+          learning to predict user intent from multimodal biosignals for people with disabilities. I also develop efficient exploration and manipulation policies with <b>tactile sensing</b> [<a
+            href="https://jxu.ai/geotact/"
+            >AuRo'25</a
+          >, <a href="https://jxu.ai/tandem3d/">ICRA'23</a>, <a href="https://jxu.ai/tandem/">RA-L'22</a>]. At the same time, I am a multifaceted roboticist with research experience in a variety of
+          applications such as dynamic grasping [<a href="https://yjia.net/meta/">CASE'24</a>, <a href="https://crlab.cs.columbia.edu/dynamic_grasping/">IROS'21</a>], visual navigation [<a
+            href="https://arxiv.org/abs/1909.09295"
+            >IROS'20</a
+          >], motion planning [<a href="https://multiarm.cs.columbia.edu/">CoRL'20</a>], optimal control [<a href="https://arxiv.org/abs/2104.00827">L4DC'21</a>], and brain-computer interface [<a
+            href="https://arxiv.org/abs/1910.00682"
+            >ICRA'20</a
+          >]. My <a href="https://youtu.be/Qfq0BT6En4E?si=7yWaPlewAKu-ocwM">talk at Ai2</a> provides a good summary of my PhD research and <a href="https://arxiv.org/abs/2509.16834">thesis</a>.
+        </p>
+      </div>
+
+      <div class="research">
+        <h1>Highlights</h1>
+        <div class="research-columns">
+          <div class="video-col">
+            <div class="caption">Retrieve burried objects with tactile sensors.</div>
+            <div class="video-container">
+              <!-- <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MkaITIAZQEk?si=4w7dcmuU7PIBIoFP"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe> -->
+              <a href="https://youtu.be/MkaITIAZQEk?si=LmxTcFpozHJqccIY" target="_blank">
+                <video autoplay loop muted playsinline preload="none" src="highlights/geotact_highlight.mp4"></video>
+              </a>
+            </div>
+          </div>
+
+          <div class="video-col">
+            <div class="caption">Generative AI for rehabilitation robots.</div>
+            <div class="video-container">
+              <!-- <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ozLbAGEkCug?si=Iop2Shd1BRUcCTpK"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe> -->
+              <a href="https://youtu.be/ozLbAGEkCug?si=ZPqFaSRVVOPqLRVc" target="_blank">
+                <video autoplay loop muted playsinline preload="none" src="highlights/chatemg_highlight.mp4"></video>
+              </a>
+            </div>
+          </div>
+
+          <div class="video-col">
+            <div class="caption">How to grasp moving objects?</div>
+            <div class="video-container">
+              <!-- <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/KPsjytWk07s"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe> -->
+              <a href="https://youtu.be/hP1aSd1YDq8?si=SWFjGHAN14AD3PVz" target="_blank">
+                <video autoplay loop muted playsinline preload="none" src="highlights/dynamic_highlight.mp4"></video>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-columns">
+          <div class="video-col">
+            <div class="caption">Exoskeleton with haptic torque feedback.</div>
+            <div class="video-container">
+              <!-- <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/z_90xVf1-88"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe> -->
+              <a href="https://youtu.be/1x9Pnb9bv7M?si=8QN92p5Sq7OH0AFe" target="_blank">
+                <video autoplay loop muted playsinline preload="none" src="highlights/ume_highlight.mp4"></video>
+              </a>
+            </div>
+          </div>
+
+          <div class="video-col">
+            <div class="caption">Visual navigation.</div>
+            <div class="video-container">
+              <!-- <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/1lVHNuzH7Gc?si=XLR5FkMJsBRJj39Z"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe> -->
+              <a href="https://youtu.be/1lVHNuzH7Gc?si=SWlK63yxSMRLwhIL" target="_blank">
+                <video autoplay loop muted playsinline preload="none" src="highlights/nav_highlight.mp4"></video>
+              </a>
+            </div>
+          </div>
+
+          <div class="video-col">
+            <div class="caption">Learning-based motion planning.</div>
+            <div class="video-container">
+              <!-- <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/GNos793PFG4?si=pUWnlZUtNORjjjBz"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe> -->
+              <a href="https://youtu.be/GNos793PFG4?si=8_zpOldoFGrJprOr" target="_blank">
+                <video autoplay loop muted playsinline preload="none" src="highlights/multiarm_highlight.mp4"></video>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news">
+        <h1>News</h1>
+        <ul>
+          <li>[2026-04] Honored to be selected for <font color="red">RSS Pioneer 2026</font>.</li>
+          <li>
+            [2025-08] I successfully defended my thesis. Great thanks to my committee: <a href="https://roam.me.columbia.edu/people/matei-ciocarlie">Matei Ciocarlie</a>,
+            <a href="https://shurans.github.io/">Shuran Song</a>, <a href="https://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a>, <a href="https://www.lerrelpinto.com/">Lerrel Pinto</a>, and
+            <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/argall-brenna.html">Brenna Argall</a>. Checkout my thesis:
+            <a href="https://arxiv.org/abs/2509.16834">Robot Learning with Sparsity and Scarcity </a> for more details.
+          </li>
+          <li>
+            [2024-10] I gave a talk at the <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab (SVL)</a>, hosted by <a href="https://profiles.stanford.edu/fei-fei-li">Fei-Fei Li</a>.
+          </li>
+          <li>
+            [2024-05] I received the
+            <font color="red">Computer Science Service Award</font> from Columbia University.
+          </li>
+          <li>[2024-02] <a href="https://jxu.ai/geotact">GEOTACT</a> is in the <a href="https://spectrum.ieee.org/video-friday-monocycle-robot-with-legs">IEEE Spectrum Video Friday</a> roundup.</li>
+          <li>
+            [2022-08] Our paper on
+            <a href="https://arxiv.org/abs/2110.02258">thumb stabilization</a>
+            is selected as <font color="red">Best Paper Finalist</font> at BioRob 2022.
+          </li>
+          <li>
+            [2022-03] Our work on developing a hand orthosis to help stroke patients reuse their hands is now featured on the latest issue of Columbia Engineering magazine:
+            <a href="https://topics.engineering.columbia.edu/robots-medicine/">Better Living with Robots</a>.
+          </li>
+          <li>
+            [2019-04] I am deeply honored to receive the
+            <font color="red">Andrew P. Kosoresow Memorial Award for Excellence in Teaching and Service</font>
+            from the Computer Science Department.
+          </li>
+          <li>
+            [2018-08] I received the
+            <font color="red">CA Fellowship (≤ 2%)</font> from Columbia University.
+          </li>
+          <li>
+            [2017-06] I started an internship at
+            <a href="https://www.arm.com/">arm</a>, Cambridge, UK, working on CPU pipeline visualization.
+          </li>
+          <li>
+            [2017-05] I graduated from the University of Edinburgh with First Class Honours and
+            <font color="red">Class Medal</font> (overall grade ranks first in class).
+          </li>
+        </ul>
+      </div>
+
+      <div class="publications" id="publications">
+        <h1>Publications</h1>
+
+        <p>
+          *: indicating equal contribution or alphabetic ordering. You can also check my
+          <a href="https://scholar.google.com/citations?user=DZ-WjTIAAAAJ&hl=en">Google Scholar</a>
+          profile.
+          <br />
+          (Co-)First-author papers are <span class="highlight">highlighted</span>.
+        </p>
+
+        <div class="year">2026</div>
+        <ul>
+          <li class="publication-item highlight">
+            <div class="publication-img-col">
+              <video class="publication-img" autoplay loop muted playsinline src="imgs/corl2026_ume.mp4"></video>
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://ume-exo.github.io/">Universal Manipulation Exoskeleton: Learning Compliant Whole-body Policies with Real-time Torque Feedback</a>
+              </div>
+              <div class="publication-author">Litian Liang*, <b>Jingxi Xu*</b>, Xinda Qi, Yujun Cai, Houzhu Ding, Luqi Wang, Zhixin Sun, Jyh-Herng Chow, Ming Yang, Mark Cutkosky</div>
+              <div class="publication-conference">Preprint</div>
+              <div class="publication-link">
+                [<a href="https://arxiv.org/abs/2606.14218">arXiv</a>] [<a href="https://ume-exo.github.io/">Webpage</a>] [<a href="https://youtu.be/1x9Pnb9bv7M?si=n2_0ytXx5yQv7l2F">Video</a>]
+              </div>
+            </div>
+          </li>
+
+          <li class="publication-item">
+            <div class="publication-img-col">
+              <video class="publication-img" autoplay loop muted playsinline src="imgs/neurips2025_reactemg.mp4"></video>
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://reactemg.github.io/">ReactEMG: Stable, Low-Latency Intent Detection from sEMG via Masked Modeling</a>
+              </div>
+              <div class="publication-author">Runsheng Wang*, Xinyue Zhu*, Ava Chen, <b>Jingxi Xu</b>, Lauren Winterbottom, Dawn M. Nilsen, Joel Stein, Matei Ciocarlie</div>
+              <div class="publication-conference">Preprint</div>
+              <div class="publication-link">
+                [<a href="https://arxiv.org/abs/2506.19815">arXiv</a>] [<a href="https://reactemg.github.io/">Webpage</a>] [<a href="https://youtu.be/AKT8hMvVCGY?si=9i-53hCf0x44wLU-">Video</a>] [<a
+                  href="https://github.com/roamlab/reactemg"
+                  >Code</a
+                >]
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="year">2025</div>
+        <ul>
+          <li class="publication-item highlight">
+            <div class="publication-img-col">
+              <video class="publication-img" autoplay loop muted playsinline src="imgs/tro2024_geotact.mp4"></video>
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://jxu.ai/geotact">Tactile-based Object Retrieval From Granular Media</a>
+              </div>
+              <div class="publication-author"><b>Jingxi Xu*</b>, Yinsen Jia*, Dongxiao Yang*, Patrick Meng, Xinyue Zhu, Zihan Guo, Shuran Song, Matei Ciocarlie</div>
+              <div class="publication-conference">Autonomous Robots (AuRo) 2025</div>
+              <div class="publication-link">
+                [<a href="https://arxiv.org/abs/2402.04536">arXiv</a>] [<a href="https://jxu.ai/geotact">Webpage</a>] [<a href="https://youtu.be/MkaITIAZQEk?si=4u5hlVAhZIWogE-c">Video</a>]
+              </div>
+              <div class="publication-link">Media Coverage: [<a href="https://spectrum.ieee.org/video-friday-monocycle-robot-with-legs">IEEE Spectrum Video Friday</a>]</div>
+            </div>
+          </li>
+
+          <li class="publication-item highlight">
+            <div class="publication-img-col">
+              <video class="publication-img" autoplay loop muted playsinline src="imgs/ral2024_chatemg.mp4"></video>
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://jxu.ai/chatemg">ChatEMG: Synthetic Data Generation to Control a Robotic Hand Orthosis for Stroke</a>
+              </div>
+              <div class="publication-author">
+                <b>Jingxi Xu*</b>, Runsheng Wang*, Siqi Shang*, Ava Chen, Lauren Winterbottom, To-Liang Hsu, Wenxi Chen, Khondoker Ahmed, Pedro Leandro La Rotta, Xinyue Zhu, Dawn M. Nilsen, Joel
+                Stein, Matei Ciocarlie
+              </div>
+              <div class="publication-conference">Robotics and Automation Letters (RA-L)</div>
+              <div class="publication-conference">International Conference on Robotics and Automation (ICRA) 2025</div>
+              <div class="publication-link">
+                [<a href="https://arxiv.org/abs/2406.12123">arXiv</a>] [<a href="https://jxu.ai/chatemg">Webpage</a>] [<a href="https://youtu.be/ozLbAGEkCug?si=hkojOrtFfUg-ug-Y">Video</a>] [<a
+                  href="https://github.com/jingxixu/chatemg"
+                  >Code</a
+                >] [<a href="files/icra2025_chatemg_poster.pdf">Poster</a>]
+              </div>
+            </div>
+          </li>
+
+          <li class="publication-item highlight">
+            <div class="publication-img-col">
+              <img src="imgs/icorr2025_reciprocal.png" class="publication-img" alt="" />
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://arxiv.org/abs/2412.07956">Reciprocal Learning of Intent Inferral with Augmented Visual Feedback for Stroke</a>
+              </div>
+              <div class="publication-author"><b>Jingxi Xu*</b>, Ava Chen*, Lauren Winterbottom, Joaquin Palacios, Preethika Chivukula, Dawn Nilsen, Joel Stein, Matei Ciocarlie</div>
+              <div class="publication-conference">International Conference on Rehabilitation Robotics (ICORR) 2025</div>
+              <div class="publication-link">[<a href="https://arxiv.org/abs/2412.07956">arXiv</a>] [<a href="files/icorr2025_reciprocal_poster.pdf">Poster</a>]</div>
+            </div>
+          </li>
+
+          <li class="publication-item">
+            <div class="publication-img-col">
+              <img src="imgs/icorr2025_fabric.png" class="publication-img" alt="" />
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://arxiv.org/abs/2412.14185">Fabric Sensing of Intrinsic Hand Muscle Activity</a>
+              </div>
+              <div class="publication-author">
+                Katelyn Lee, Runsheng Wang, Ava Chen, Lauren Winterbottom, Ho Man Colman Leung, Lisa Maria DiSalvo, Iris Xu, <b>Jingxi Xu</b>, Dawn M. Nilsen, Joel Stein, Xia Zhou, Matei Ciocarlie
+              </div>
+              <div class="publication-conference">International Conference on Rehabilitation Robotics (ICORR) 2025</div>
+              <div class="publication-link">[<a href="https://arxiv.org/abs/2412.14185">arXiv</a>]</div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="year">2024</div>
+
+        <ul>
+          <li class="publication-item highlight">
+            <div class="publication-img-col">
+              <img src="imgs/iros2024_metaemg.png" class="publication-img" alt="" />
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="http://arxiv.org/abs/2403.13147">Meta-Learning for Fast Adaptation in Intent Inferral on a Robotic Hand Orthosis for Stroke</a>
+              </div>
+              <div class="publication-author">Pedro Leandro La Rotta*, <b>Jingxi Xu*</b>, Ava Chen, Lauren Winterbottom, Wenxi Chen, Dawn Nilsen, Joel Stein, Matei Ciocarlie</div>
+              <div class="publication-conference">International Conference on Intelligent Robots and Systems (IROS) 2024</div>
+              <div class="publication-link">[<a href="http://arxiv.org/abs/2403.13147">arXiv</a>]</div>
+            </div>
+          </li>
+
+          <li class="publication-item highlight">
+            <div class="publication-img-col">
+              <video class="publication-img" autoplay loop muted playsinline src="imgs/rss2023_meta.mp4"></video>
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://yjia.net/meta/">Dynamic Grasping with a Learned Meta-controller</a>
+              </div>
+              <div class="publication-author">Yinsen Jia*, <b>Jingxi Xu*</b>, Dinesh Jayaraman, Shuran Song</div>
+              <div class="publication-award">🏆 NeurIPS Registration Award</div>
+              <!-- <div class="publication-conference">Under review</div> -->
+              <div class="publication-conference">5th Robot Learning Workshop at Neural Information Processing Systems (NeurIPS) 2022</div>
+              <div class="publication-conference">International Conference on Automation Science and Engineering (CASE) 2024</div>
+              <div class="publication-link">[<a href="https://arxiv.org/abs/2302.08463">arXiv</a>] [<a href="https://yjia.net/meta/">Webpage</a>]</div>
+            </div>
+          </li>
+
+          <li class="publication-item">
+            <div class="publication-img-col">
+              <img src="imgs/biorob2024_kinematics.png" class="publication-img" alt="" />
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://arxiv.org/abs/2402.08019">Volitional Control of the Paretic Hand Post-Stroke Increases Finger Stiffness and Resistance to Robot-Assisted Movement </a>
+              </div>
+              <div class="publication-author">
+                Ava Chen*, Katelyn Lee*, Lauren Winterbottom, <b>Jingxi Xu</b>, Connor Lee, Grace Munger, Alexandra Deli-Ivanov, Dawn M. Nilsen, Joel Stein, Matei Ciocarlie
+              </div>
+              <div class="publication-conference">International Conference on Biomedical Robotics and Biomechatronics (BioRob) 2024</div>
+              <div class="publication-link">[<a href="https://arxiv.org/abs/2402.08019">arXiv</a>]</div>
+            </div>
+          </li>
+
+          <li class="publication-item">
+            <div class="publication-img-col">
+              <img src="imgs/icra2024_mic.png" class="publication-img" alt="" />
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://arxiv.org/abs/2310.00206">An Investigation of Multi-feature Extraction and Super-resolution with Fast Microphone Arrays</a>
+              </div>
+              <div class="publication-author">Eric T. Chang*, Runsheng Wang*, Peter Ballentine, <b>Jingxi Xu</b>, Trey Smith, Brian Coltin, Ioannis Kymissis, Matei Ciocarlie</div>
+              <div class="publication-conference">International Conference on Robotics and Automation (ICRA) 2024</div>
+              <div class="publication-link">[<a href="https://arxiv.org/abs/2310.00206">arXiv</a>]</div>
+            </div>
+          </li>
+
+          <li class="publication-item">
+            <div class="publication-img-col">
+              <img src="imgs/vr2024.png" class="publication-img" alt="" />
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://youtu.be/cChHxkaFB3w?si=ZGxmL1eyC4tYU4-m">Asynchronously Assigning, Monitoring, and Managing Assembly Goals in Virtual Reality for High-Level Robot Teleoperation</a>
+              </div>
+              <div class="publication-author">Shutaro Aoyama, Jen-Shuo Liu, Portia Wang, Shreeya Jain, Xuezhen Wang, <b>Jingxi Xu</b>, Shuran Song, Barbara Tversky, Steven Feiner</div>
+              <div class="publication-conference">Conference on Virtual Reality and 3D User Interfaces (VR) 2024</div>
+              <div class="publication-link">
+                [<a href="https://ieeexplore.ieee.org/abstract/document/10494163">IEEEXplore</a>] [<a href="https://youtu.be/cChHxkaFB3w?si=ZGxmL1eyC4tYU4-m">Video</a>]
+              </div>
+            </div>
+          </li>
+
+          <li class="publication-item">
+            <div class="publication-img-col">
+              <img src="imgs/inspire2024.jpeg" class="publication-img" alt="" />
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="files/inspire2024_poster.pdf"
+                  >Collaboration between Occupational Therapists, Engineers, and People with Neurological Conditions in the Development of Wearable Robotic Devices</a
+                >
+              </div>
+              <div class="publication-author">Lauren Winterbottom, Dawn M. Nilsen, Rochelle Mendonca, Ava Chen, Sara Lin, Kevin Carroll, <b>Jingxi Xu</b>, Matei Ciocarlie, and Joel Stein</div>
+              <div class="publication-conference">American Occupational Therapy Association (AOTA) INSPIRE Conference 2024</div>
+              <div class="publication-link">[<a href="files/inspire2024_poster.pdf">Poster</a>]</div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="year">2023</div>
+        <ul>
+          <li class="publication-item highlight">
+            <div class="publication-img-col">
+              <video class="publication-img" autoplay loop muted playsinline src="imgs/icra2023_tandem3d.mp4"></video>
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://jxu.ai/tandem3d/">TANDEM3D: Active Tactile Exploration for 3D Object Recognition</a>
+              </div>
+              <div class="publication-author"><b>Jingxi Xu</b>*, Han Lin*, Shuran Song, Matei Ciocarlie</div>
+              <div class="publication-conference">International Conference on Robotics and Automation (ICRA) 2023</div>
+              <div class="publication-link">
+                [<a href="https://arxiv.org/abs/2209.08772">arXiv</a>] [<a href="https://jxu.ai/tandem3d">Webpage</a>] [<a href="files/icra2023_tandem3d_poster.pdf">Poster</a>]
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="year">2022</div>
+        <ul>
+          <li class="publication-item highlight">
+            <div class="publication-img-col">
+              <video class="publication-img" autoplay loop muted playsinline src="imgs/iros2022.mp4"></video>
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://jxu.ai/tandem/">TANDEM: Learning Joint Exploration and Decision Making with Tactile Sensors</a>
+              </div>
+              <div class="publication-author"><b>Jingxi Xu</b>, Shuran Song, Matei Ciocarlie</div>
+              <div class="publication-conference">Robotics and Automation Letters (RA-L)</div>
+              <div class="publication-conference">International Conference on Intelligent Robots and Systems (IROS) 2022</div>
+              <div class="publication-link">[<a href="https://arxiv.org/abs/2203.00798">arXiv</a>] [<a href="https://jxu.ai/tandem">Webpage</a>]</div>
+            </div>
+          </li>
+
+          <li class="publication-item">
+            <div class="publication-img-col">
+              <img src="imgs/icra2022_thumb.png" class="publication-img" alt="" />
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://arxiv.org/abs/2110.02258">Thumb Stabilization and Assistance in a Robotic Hand Orthosis for Post-Stroke Hemiparesis</a>
+              </div>
+              <div class="publication-author">
+                Ava Chen, Lauren Winterbottom, Sangwoo Park,
+                <b>Jingxi Xu</b>, Dawn Nilsen, Joel Stein, Matei Ciocarlie
+              </div>
+              <div class="publication-award">🏆 Best Paper Finalist</div>
+              <div class="publication-conference">Robotics and Automation Letters (RA-L)</div>
+              <div class="publication-conference">International Conference on Biomedical Robotics and Biomechatronics (BioRob) 2022</div>
+              <div class="publication-link">[<a href="https://arxiv.org/abs/2110.02258">arXiv</a>]</div>
+            </div>
+          </li>
+
+          <li class="publication-item highlight">
+            <div class="publication-img-col">
+              <video class="publication-img" autoplay loop muted playsinline src="imgs/icra2022_dssm.mp4"></video>
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://roamlab.github.io/dssm">Adaptive Semi-Supervised Intent Inferral to Control a Powered Hand Orthosis for Stroke</a>
+              </div>
+              <div class="publication-author">
+                <b>Jingxi Xu</b>, Cassie Meeker, Ava Chen, Lauren Winterbottom, Michaela Fraser, Sangwoo Park, Lynne M. Weber, Mitchell Miya, Dawn Nilsen, Joel Stein, Matei Ciocarlie
+              </div>
+              <div class="publication-conference">International Conference on Robotics and Automation (ICRA) 2022</div>
+              <div class="publication-link">
+                [<a href="https://arxiv.org/abs/2011.00034">arXiv</a>] [<a href="https://roamlab.github.io/dssm">Webpage</a>] [<a href="files/icra2022_orthosis_poster.pdf">Poster</a>]
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="year">2021</div>
+
+        <ul>
+          <li class="publication-item highlight">
+            <div class="publication-img-col">
+              <video class="publication-img" autoplay loop muted playsinline src="imgs/iros2021_dynamic.mp4"></video>
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="http://crlab.cs.columbia.edu/dynamic_grasping/">Dynamic Grasping with Reachability and Motion Awareness</a>
+              </div>
+              <div class="publication-author">Iretiayo Akinola*, <b>Jingxi Xu</b>*, Shuran Song, Peter Allen</div>
+              <div class="publication-conference">International Conference on Intelligent Robots and Systems (IROS) 2021</div>
+              <div class="publication-link">[<a href="https://arxiv.org/abs/2103.10562">arXiv</a>] [<a href="http://crlab.cs.columbia.edu/dynamic_grasping/">Webpage</a>]</div>
+            </div>
+          </li>
+
+          <li class="publication-item highlight">
+            <div class="publication-img-col">
+              <img src="imgs/l4dc2021_noisyp.gif" class="publication-img" alt="" />
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://jxu.ai/rl-vs-control-web/">How Are Learned Perception-Based Controllers Impacted by the Limits of Robust Control?</a>
+              </div>
+              <div class="publication-author"><b>Jingxi Xu</b>, Bruce Lee, Nikolai Matni, Dinesh Jayaraman</div>
+              <div class="publication-conference">Learning for Dynamics & Control Conference (L4DC) 2021</div>
+              <div class="publication-link">
+                [<a href="http://arxiv.org/abs/2104.00827">arXiv</a>] [<a href="https://jxu.ai/rl-vs-control-web/">Webpage</a>] [<a href="files/l4dc2020_poster.pdf">Poster</a>]
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="year">2020</div>
+        <ul>
+          <li class="publication-item">
+            <div class="publication-img-col">
+              <img src="imgs/corl2020_multiarm.gif" class="publication-img" alt="" />
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="https://multiarm.cs.columbia.edu/">Learning a Decentralized Multi-Arm Motion Planner</a>
+              </div>
+              <div class="publication-author">Huy Ha, <b>Jingxi Xu</b>, Shuran Song</div>
+              <div class="publication-conference">Conference on Robot Learning (CoRL) 2020</div>
+              <div class="publication-link">[<a href="https://arxiv.org/abs/2011.02608">arXiv</a>] [<a href="https://multiarm.cs.columbia.edu/">Webpage</a>]</div>
+            </div>
+          </li>
+
+          <li class="publication-item highlight">
+            <div class="publication-img-col">
+              <img src="imgs/iros2020_nav.gif" class="publication-img" alt="" />
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="http://crlab.cs.columbia.edu/learning_your_way/">Learning Your Way Without Map or Compass: Panoramic Target Driven Visual Navigation</a>
+              </div>
+              <div class="publication-author">David Watkins*, <b>Jingxi Xu</b>*, Nicholas Waytowich, Peter Allen</div>
+              <div class="publication-conference">International Conference on Intelligent Robots and Systems (IROS) 2020</div>
+              <div class="publication-link">[<a href="https://arxiv.org/abs/1909.09295">arXiv</a>] [<a href="http://crlab.cs.columbia.edu/learning_your_way/">Webpage</a>]</div>
+            </div>
+          </li>
+
+          <li class="publication-item">
+            <div class="publication-img-col">
+              <video class="publication-img" autoplay loop muted playsinline src="imgs/icra2020_bci.mp4"></video>
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="http://crlab.cs.columbia.edu/brain_guided_rl/">Accelerated Robot Learning via Human Brain Signals</a>
+              </div>
+              <div class="publication-author">Iretiayo Akinola*, Zizhao Wang*, Junyao Shi, Xiaomin He, Pawan Lapborisuth, <b>Jingxi Xu</b>, David Watkins, Paul Sajda, Peter Allen</div>
+              <div class="publication-conference">International Conference on Robotics and Automation (ICRA) 2020</div>
+              <div class="publication-link">[<a href="https://arxiv.org/abs/1910.00682">arXiv</a>] [<a href="http://crlab.cs.columbia.edu/brain_guided_rl/">Webpage</a>]</div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="year">2019</div>
+        <ul>
+          <li class="publication-item highlight">
+            <div class="publication-img-col">
+              <img src="imgs/icml2019_amtl.png" class="publication-img" alt="" />
+            </div>
+            <div class="publication-info-col">
+              <div class="publication-title">
+                <a href="http://arxiv.org/abs/2103.13420">Active Multitask Learning with Committees</a>
+              </div>
+              <div class="publication-author"><b>Jingxi Xu</b>, Tang Da, Tony Jebara</div>
+              <div class="publication-award">🏆 Travel Award</div>
+              <div class="publication-conference">Adaptive and Multi-Task Learning Workshop at the International Conference on Machine Learning (ICML) 2019</div>
+              <div class="publication-link">[<a href="http://arxiv.org/abs/2103.13420">arXiv</a>] [<a href="files/amtl_2019_poster.pdf">Poster</a>]</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="talks" id="talks">
+        <h1>Talks</h1>
+
+        <ul>
+          <li>[2025-08-29] <b>"Robot Learning with Sparsity and Scarcity"</b> @ <a href="https://allenai.org/">Ai2</a>, hosted by <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>.</li>
+          <li>[2025-05-08] <b>"Robot Learning with Sparsity and Scarcity"</b> @ <a href="https://personainc.ai/">Persona AI</a>, hosted by Jerry Pratt.</li>
+          <li>[2025-05-01] <b>"Robot Learning with Sparsity and Scarcity"</b> @ <a href="https://gmu.edu/">George Mason University</a>, hosted by Jinwei Ye.</li>
+          <li>[2025-04-07] <b>"Robot Learning with Sparsity and Scarcity"</b> @ <a href="https://meta.com/">Meta</a>, hosted by Eftychios A. Pnevmatikakis.</li>
+          <li>[2025-04-01] <b>"Robot Learning with Sparsity and Scarcity"</b> @ Amazon FAR, hosted by Christoph Schwerdtfeger.</li>
+          <li>[2025-03-26] <b>"Robot Learning with Sparsity and Scarcity"</b> @ <a href="https://rai-inst.com/">RAI Institute</a>, hosted by David Watkins.</li>
+          <li>[2025-03-20] <b>"Robot Learning with Sparsity and Scarcity"</b> @ <a href="https://lehigh.edu/">Lehigh University</a>, hosted by Mooi Choo Chuah.</li>
+          <li>[2025-03-18] <b>"Robot Learning with Sparsity and Scarcity"</b> @ <a href="https://faunarobotics.com/">Fauna Robotics</a>, hosted by Josh Merel.</li>
+          <li>[2025-01-28] <b>"Robot Learning with Sparsity and Scarcity"</b> @ <a href="https://njit.edu/">NJIT</a>, hosted by Kasthuri Jayarajah.</li>
+          <li>[2025-01-16] <b>"Robot Learning with Sparsity and Scarcity"</b> @ Amazon Robotics, hosted by Paul Birkmeyer.</li>
+          <li>
+            [2024-10-07] <b>"Robot Learning with Sparsity and Scarcity"</b> @ <a href="https://svl.stanford.edu/">Stanford</a>, hosted by
+            <a href="https://profiles.stanford.edu/fei-fei-li">Fei-Fei Li</a>.
+          </li>
+          <li>
+            [2024-07-19] <b>"Learning Tactile-only Exploration and Manipulation Policies"</b> @
+            <a href="https://noosphereworkshop.github.io/">RSS 2024 Workshop: Noosphere: Tactile Sensing for General Purpose Robot Learning</a>.
+          </li>
+          <li>
+            [2024-02-20] <b>"The Practice of Robot Learning I" (<a href="https://youtu.be/ubPQHgdVhzM?si=zcAVOt1NOrthLp1n">video</a>)</b> @ <a href="https://www.columbia.edu/">Columbia</a>, guest
+            lecture hosted by Matei Ciocarlie.
+          </li>
+          <li>
+            [2023-09-20] <b>"Robotic Hand Orthoses for Assistance and Rehabilitation After Stroke"</b> @
+            <a href="http://127.0.0.1:5500/files/GPMRR_Sept%202023.pdf">Global Perspectives on Medicine, Rehabilitation and Robotics Webinar Series</a>.
+          </li>
+          <li>[2023-03-24] <b>"Tactile Sensing and Its Applications"</b> @ <a href="https://www.columbia.edu/">Columbia</a>, guest lecture hosted by Shuran Song.</li>
+          <li>[2023-01-31] <b>"The Practice of Robot Learning I"</b> @ <a href="https://www.columbia.edu/">Columbia</a>, guest lecture hosted by Matei Ciocarlie.</li>
+          <li>[2022-04-28] <b>"The Practice of Robot Learning II"</b> @ <a href="https://www.columbia.edu/">Columbia</a>, guest lecture hosted by Matei Ciocarlie.</li>
+          <li>[2022-02-25] <b>"Tactile Sensing and Its Applications"</b> @ <a href="https://www.columbia.edu/">Columbia</a>, guest lecture hosted by Shuran Song.</li>
+          <li>[2022-02-08] <b>"The Practice of Robot Learning I"</b> @ <a href="https://www.columbia.edu/">Columbia</a>, guest lecture hosted by Matei Ciocarlie.</li>
+          <li>
+            [2021-10-01] <b>"MyHand: a Wearable Hand Orthosis for Stroke"</b> @
+            <a href="https://haosu-robotics.github.io/2021iros-workshop.html"
+              >IROS 2021 Workshop: Challenges and Opportunities of Human-robot Symbiosis: from Wearable Robots to Neurorobotics Workshop</a
+            >.
+          </li>
+          <li>
+            [2021-09-27] <b>"Dynamic Grasping with Reachability and Motion Awareness"</b> @ <a href="https://wordpress.lehigh.edu/robotics/">Lehigh</a>, hosted by
+            <a href="https://engineering.lehigh.edu/faculty/mooi-choo-chuah"> Mooi Choo Chuah</a>.
+          </li>
+          <li>
+            [2021-07-14] <b>"Dynamic Grasping with Reachability and Motion Awareness"</b> @ <a href="https://www.grasp.upenn.edu/">UPenn</a>, hosted by
+            <a href="https://www.seas.upenn.edu/~dineshj/">Dinesh Jayaraman</a>.
+          </li>
+          <li>
+            [2021-04-09] <b>"Dynamic Grasping with Reachability and Motion Awareness"</b> @ <a href="https://www.berkeley.edu/">Berkeley</a>, hosted by
+            <a href="https://people.eecs.berkeley.edu/~yima/">Yi Ma</a>.
+          </li>
+        </ul>
+      </div>
+
+      <div class="mentoring" id="mentoring">
+        <h1>Mentoring</h1>
+        <p>People I mentored at Ant Group:</p>
+        <ul>
+          <li><a href="https://www.litianliang.org/">Litian Liang</a></li>
+          <li><a href="https://shaotingpeng.github.io/">Shaoting Peng</a></li>
+          <li><a href="https://www.linkedin.com/in/zhixin-sun-867335292/">Zhixin Sun</a></li>
+        </ul>
+        <p>People I mentored at Columbia:</p>
+        <ul>
+          <li>Shreenithi Navaneethan (BME MS)</li>
+          <li>Bingyao Du (CS MS) → ECE PhD at Purdue</li>
+          <li><a href="https://yuanqing-ai.github.io/">Xinyue Zhu</a> (Undergrad CS) → CS PhD at UC Berkeley</li>
+          <li>Luke Hsu (Undergrad CS) → CS MS at Columbia</li>
+          <li>David Choi (CS MS) → Associate Software Engineer at Capital One</li>
+          <li><a href="https://yuanqing-ai.github.io/">Yuan Qing</a> (MS EE) → CS PhD at Rutgers</li>
+          <li>Pedro Leandro La Rotta (MS ME → Machine Learning Engineer at JP Morgan)</li>
+          <li>Runsheng Wang (MA Stats → ME PhD at Columbia)</li>
+          <li>Dongixao Yang (MS ME → Robotics Engineer at Xiaomi)</li>
+          <li>Siqi Shang (MS CS → ECE PhD at UT Austin)</li>
+          <li><a href="https://www.zihan-guo.com/">Zihan Guo</a> (MS ME → ME PhD at Northwestern)</li>
+          <li><a href="https://www.wenxi-projects.com/">Wenxi Chen</a> (MS ME → ME PhD at Purdue)</li>
+          <li>Patrick Meng (MS CS → CS PhD at Rutgers)</li>
+          <li><a href="https://ys-jia.github.io/">Yinsen Jia</a> (MS EE → EE PhD at Duke)</li>
+          <li><a href="https://hl-hanlin.github.io/">Han Lin</a> (MS CS → CS PhD at UNC)</li>
+        </ul>
+      </div>
+
+      <div class="teaching" id="teaching">
+        <h1>Teaching</h1>
+        <p>Teaching assistant at Columbia University for:</p>
+        <ul>
+          <li>Robot Learning (MECE6616) - Spring 2023</li>
+          <li>Robot Learning (MECE6616) - Spring 2021</li>
+          <li>
+            <a href="http://www.cs.columbia.edu/~allen/F19/">Computational Aspects of Robotics (COMS4733)</a>
+            - Fall 2019
+          </li>
+          <li>
+            <a href="http://www.cs.columbia.edu/~allen/S19/">Humanoid Robots (COMS6731)</a>
+            - Spring 2019
+          </li>
+          <li>
+            <a href="http://www.cs.columbia.edu/~allen/F19/">Computational Aspects of Robotics (COMS4733)</a>
+            - Fall 2018
+          </li>
+          <li>
+            <a href="http://www.cs.columbia.edu/~verma/classes/ml/index.html">Machine Learning (COMS4771)</a>
+            - Spring 2018
+          </li>
+        </ul>
+      </div>
+
+      <div class="projects">
+        <h1>Projects</h1>
+        <ul>
+          <li>
+            <a href="files/dl4cv_2018.pdf">Deep Temporal Multi-scale Net for Apparent Personality Analysis</a>
+            - advised by
+            <a href="https://www.ee.columbia.edu/~sfchang/">Shih-Fu Chang</a>
+          </li>
+          <li>
+            <a href="files/proj_eye.pdf">Integrate Eye-tracking with BCI System for Assistive Robots</a>
+            - advised by
+            <a href="https://www.cs.columbia.edu/~allen">Peter Allen</a>
+          </li>
+          <li>
+            <a href="files/proj_cpu.pdf">Hybrid HW/SW CPU Simulation using Zync</a>
+            - advised by
+            <a href="http://homepages.inf.ed.ac.uk/npt/">Nigel Topham</a>
+            and
+            <a href="http://homepages.inf.ed.ac.uk/bgrot/">Boris Grot</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="misc" id="misc">
+        <h1>Misc</h1>
+        <ul>
+          <li>
+            According to this fun <a href="https://www.mathgenealogy.org/">website</a> that tracks the academic genealogy, I am an academic descendent of
+            <a href="https://en.wikipedia.org/wiki/Isaac_Newton">Issac Newton</a>. <a href="files/genealogy.txt">Here</a> is the specific branch.
+          </li>
+          <li>
+            I used to work on computer architecture during my undergraduate years at Edinburgh. I got accepted to DPhil in Computer Science at Oxford University with full funding (Jason Hu Scholarship
+            from Balliol College) when I graduated from Edinburgh. However, in order to explore AI/robotics a bit more than staying in computer architecture for my PhD, I decided to do a master first
+            at Columbia to gain more research experience in AI/robotics.
+          </li>
+          <li>This website is built with a single css and html file.</li>
+          <!-- <li>
+            I am originally from
+            <a href="https://en.wikipedia.org/wiki/Zhuhai">Zhuhai</a>, Guangdong, China.
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p class="footer-content">&copy;Copyright 2026 James (Jingxi) Xu.</p>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector("nav");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        toggle.textContent = nav.classList.contains("open") ? "×" : "☰";
+      });
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          nav.classList.remove("open");
+          toggle.textContent = "☰";
+        });
+      });
+    </script>
+  </body>
+</html>
