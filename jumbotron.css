@@ -13,29 +13,26 @@ h3 {
   background-color: #ffffff !important;
 }
 
+#Home > .container {
+  background-color: #343a40;
+}
+
 #Home .navbar-brand {
-  color: #0c318f !important;
-  padding-top: 0;
-  padding-bottom: 0;
+  color: #ffffff !important;
 }
 
 #Home .navbar-brand h2 {
-  color: #0c318f;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.6;
+  color: #ffffff;
   margin: 0;
 }
 
 #Home .nav-link {
-  color: #000000 !important;
-  font-weight: 600;
-  line-height: 1.6;
+  color: #ffffff !important;
 }
 
 #Home .nav-link:hover,
 #Home .nav-link:focus {
-  color: #0c318f !important;
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 a:link {
