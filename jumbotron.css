@@ -1,0 +1,55 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+  line-height: 1.6;
+}
+
+h2,
+h3 {
+  color: #0c318f;
+}
+
+#Home.navbar.bg-dark {
+  background-color: #ffffff !important;
+}
+
+#Home .navbar-brand {
+  color: #0c318f !important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#Home .navbar-brand h2 {
+  color: #0c318f;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+#Home .nav-link {
+  color: #000000 !important;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+#Home .nav-link:hover,
+#Home .nav-link:focus {
+  color: #0c318f !important;
+}
+
+a:link {
+  color: #003399;
+}
+
+a:visited {
+  color: #003399;
+}
+
+a:hover {
+  color: #003399;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
