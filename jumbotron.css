@@ -10,11 +10,27 @@ h3 {
 }
 
 #Home.navbar.bg-dark {
+  position: fixed;
   background-color: #ffffff !important;
+  z-index: 1030;
+}
+
+#Home.navbar.bg-dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 1110px;
+  background-color: #0c318f;
+  transform: translateX(-50%);
+  z-index: 0;
 }
 
 #Home > .container {
-  background-color: #343a40;
+  position: relative;
+  z-index: 1;
 }
 
 #Home .navbar-brand {
