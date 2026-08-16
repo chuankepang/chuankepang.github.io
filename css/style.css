@@ -75,7 +75,7 @@ img {
 
 /* ===== Layout ===== */
 .container {
-  max-width: 920px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -397,7 +397,7 @@ img {
 
 .pub-entry {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 240px 1fr;
   gap: 20px;
   padding: 16px;
   background: var(--card-bg);
@@ -416,8 +416,9 @@ img {
 }
 
 .pub-thumb {
-  width: 180px;
-  height: 115px;
+  width: 240px;
+  height: auto;
+  aspect-ratio: 180 / 115;
   border-radius: 6px;
   overflow: hidden;
   background: var(--card-bg);
@@ -577,7 +578,7 @@ img {
 
 .project-card {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 240px 1fr;
   gap: 20px;
   padding: 16px;
   background: var(--card-bg);
@@ -596,8 +597,9 @@ img {
 }
 
 .project-thumb {
-  width: 180px;
-  height: 115px;
+  width: 240px;
+  height: auto;
+  aspect-ratio: 180 / 115;
   border-radius: 6px;
   overflow: hidden;
   background: var(--card-bg);
