@@ -124,7 +124,7 @@ img {
 
 .nav-brand {
   font-size: 1.15rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--primary);
   text-decoration: none;
   letter-spacing: 0.02em;
@@ -149,7 +149,7 @@ img {
   color: var(--text-secondary);
   text-decoration: none;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   transition: color 0.2s;
   position: relative;
 }
@@ -328,6 +328,7 @@ img {
 
 .highlight-item {
   min-width: 0;
+  grid-column: 1;
 }
 
 .highlight-caption {
@@ -640,6 +641,9 @@ img {
   width: 240px;
   height: auto;
   aspect-ratio: 180 / 115;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 6px;
   overflow: hidden;
   background: var(--card-bg);
@@ -648,8 +652,11 @@ img {
 
 .project-thumb img,
 .project-thumb video {
-  width: 100%;
-  height: 100%;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
   transition: transform 0.3s;
 }
@@ -1114,10 +1121,6 @@ img {
     text-align: left;
   }
 
-  .highlight-grid {
-    grid-template-columns: 1fr;
-  }
-
   .pub-entry {
     grid-template-columns: 1fr;
   }
@@ -1203,6 +1206,10 @@ img {
 @media (max-width: 480px) {
   .container {
     padding: 0 16px;
+  }
+
+  .highlight-grid {
+    grid-template-columns: 1fr;
   }
 
   .about-name {
