@@ -29,6 +29,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Retry muted autoplay when embedded previews delay media playback.
+  document.querySelectorAll('video[autoplay]').forEach(video => {
+    video.muted = true;
+
+    const startPlayback = () => {
+      video.play().catch(() => {
+        // The poster remains visible if this preview explicitly blocks autoplay.
+      });
+    };
+
+    if (video.readyState >= 2) {
+      startPlayback();
+    } else {
+      video.addEventListener('canplay', startPlayback, { once: true });
+    }
+  });
+
   // Active nav highlighting on scroll
   const sections = document.querySelectorAll('.section');
   const navItems = document.querySelectorAll('.nav-links a[href^="#"]');

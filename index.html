@@ -26,7 +26,7 @@
       <a class="nav-brand" href="#">Chuanke Pang</a>
       <div class="nav-right">
         <div class="nav-links">
-          <a href="#about">About</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#blog">Blog</a><a href="#projects">Projects</a><a href="#education">Education</a>
+          <a href="#about">About</a><a href="#highlights">Highlights</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#blog">Blog</a><a href="#projects">Projects</a><a href="#education">Education</a>
         </div>
         <button class="theme-toggle" aria-label="Toggle theme"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -51,12 +51,19 @@
     </div>
   </div></div></section>
 
-  <section id="news" class="section section-alt"><div class="container">
+  <section id="highlights" class="section section-alt"><div class="container">
+    <h2 class="section-title">Highlights</h2>
+    <div class="highlight-grid">
+      <div class="highlight-item"><div class="highlight-caption">Deformable Object Manipulation in ICRA WBCD 2026.</div><div class="highlight-media"><img src="assets/proj/wbcd2026.JPG" alt="Deformable object manipulation in the WBCD 2026 competition" loading="lazy"></div></div>
+    </div>
+  </div></section>
+
+  <section id="news" class="section"><div class="container">
     <h2 class="section-title">News</h2>
     <ul class="news-list"><li><span class="news-date">Jun 2026</span><span class="news-content">Won <span class="news-highlight">Best Innovation</span> for Complex Environments in Deformable Object Manipulation at the <a href="https://wbcdcompetition.github.io/" target="_blank" rel="noopener">ICRA WBCD 2026 Competition</a>.</span></li></ul>
   </div></section>
 
-  <section id="publications" class="section"><div class="container">
+  <section id="publications" class="section section-alt"><div class="container">
     <h2 class="section-title">Publications</h2>
     <p class="pub-note">* denotes equal contribution or alphabetical ordering. See also my <a href="https://scholar.google.com.hk/citations?user=Mr7Dx6gAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a> profile.</p>
     <div class="pub-list">
@@ -66,7 +73,7 @@
   </div></section>
 
   <!-- Blog content intentionally preserved from the reference homepage. -->
-  <section id="blog" class="section section-alt">
+  <section id="blog" class="section">
     <div class="container">
       <h2 class="section-title">Blog</h2>
       <div class="blog-preview-list">
@@ -80,17 +87,18 @@
     </div>
   </section>
 
-  <section id="projects" class="section"><div class="container">
+  <section id="projects" class="section section-alt"><div class="container">
     <h2 class="section-title">Projects</h2><div class="project-grid">
-      <div class="project-card"><div class="project-thumb"><img src="assets/proj/wbcd2026.JPG" alt="Deformable object manipulation at WBCD 2026" loading="lazy"></div><div class="project-info"><h4 class="project-title">Deformable Object Manipulation in the WBCD 2026 Competition</h4><p class="project-tldr">Developed an autonomous system to pick stacked T-shirts and accurately load them onto a printing pallet, combining perception and control for reliable handling of flexible materials under strict time constraints.</p></div></div>
+      <div class="project-card"><div class="project-thumb"><video playsinline autoplay loop muted preload="auto" poster="assets/proj/wbcd2026.JPG" aria-label="Deformable object manipulation at WBCD 2026"><source src="assets/proj/wbcd2-web.mp4" type="video/mp4">Your browser does not support HTML5 video.</video></div><div class="project-info"><h4 class="project-title">Deformable Object Manipulation in the WBCD 2026 Competition</h4><p class="project-tldr">Developed an autonomous system to pick stacked T-shirts and accurately load them onto a printing pallet, combining perception and control for reliable handling of flexible materials under strict time constraints.</p></div></div>
       <div class="project-card"><div class="project-thumb"><img src="assets/proj/teleoperation.png" alt="Dexterous teleoperation system" loading="lazy"></div><div class="project-info"><h4 class="project-title">Dexterous Teleoperation and Data Collection</h4><p class="project-tldr">Engineered a teleoperation pipeline for remote dexterous manipulation and data collection across VR, motion capture, haptics, vision-based hand tracking, and 3D mice, supporting Franka, UR, Rokae, Aubo, and bimanual systems.</p></div></div>
       <div class="project-card"><div class="project-thumb"><img src="assets/proj/pika.JPG" alt="UMI teleoperation and data collection" loading="lazy"></div><div class="project-info"><h4 class="project-title">UMI Teleoperation and Data Collection</h4><p class="project-tldr">Integrated the AgileX Pika UMI with a PIPER dual-arm robot for intuitive, high-fidelity teleoperation and egocentric demonstration collection for bimanual imitation learning.</p></div></div>
       <div class="project-card"><div class="project-thumb"><img src="assets/proj/benchmarks.png" alt="Robot learning benchmarks" loading="lazy"></div><div class="project-info"><h4 class="project-title">Training and Evaluating on Benchmarks</h4><p class="project-tldr">Set up, ran, and evaluated robot-learning models on robosuite, RoboCasa, LIBERO, RoboTwin, RoboTwin-Mem, and RMBench, assessing generalization, failure modes, and task success.</p></div></div>
+      <div class="project-card"><div class="project-thumb"><img src="assets/proj/kuka-iwaa-white.png" alt="dual-arm manipulation" loading="lazy"></div><div class="project-info"><h4 class="project-title">VLM-Driven Dual-Arm Manipulation</h4><p class="project-tldr">VLM-Driven Scene Representation, Logical Reasoning, and Task Planning for Dual-Arm Long-Horizon Manipulation, with Teleoperation and Human-Robot Interaction.</p></div></div>
       <div class="project-card"><div class="project-thumb"><img src="assets/proj/beyondmimic.png" alt="Humanoid loco-manipulation" loading="lazy"></div><div class="project-info"><h4 class="project-title">Humanoid Loco-Manipulation</h4><p class="project-tldr">Built an RL motion-tracking framework in NVIDIA Isaac Sim and a Sim2Real pipeline with MuJoCo validation for robust whole-body coordination on physical humanoids.</p><div class="project-links"><a href="https://www.bilibili.com/video/BV1TqyjBMECS" target="_blank" rel="noopener">Video</a></div></div></div>
     </div>
   </div></section>
 
-  <section id="education" class="section section-alt"><div class="container">
+  <section id="education" class="section"><div class="container">
     <h2 class="section-title">Education</h2><div class="exp-list">
       <div class="exp-entry"><div class="exp-date">Current</div><div class="exp-info"><h4 class="exp-org">Beihang University</h4><p class="exp-role">PhD Student, Intelligence &amp; Robotics</p></div></div>
       <div class="exp-entry"><div class="exp-date">Previous</div><div class="exp-info"><h4 class="exp-org">Beihang University</h4><p class="exp-role">M.S. Robotics</p></div></div>
