@@ -1,0 +1,47 @@
+/* Layout inspired by Andy Zeng's academic homepage. */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: #150c21;
+  background: #fdf9f4;
+  font: 1rem/1.5 Asap, system-ui, sans-serif;
+}
+#main { max-width: 46.5rem; margin: auto; padding: 3rem 1.25rem 5rem; }
+a { color: #146ebe; text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 2.4rem; font-weight: 500; margin: 0 0 1rem; }
+h2 { font-size: 1.2rem; font-weight: 600; margin: 0 0 .75rem; }
+h4 { font-size: 1rem; font-weight: 600; margin: 0 0 .25rem; }
+p { margin: 0 0 1rem; }
+#intro { display: flex; gap: 2rem; align-items: flex-start; }
+#intro-text { flex: 1; }
+#intro-image { flex: 0 0 12rem; margin-top: 4.6rem; }
+#intro-image img { display: block; width: 100%; border-radius: .3rem; }
+.social-links, .pub-links, .project-links { display: flex; gap: .8rem; flex-wrap: wrap; }
+.section { margin-top: 2rem; }
+.highlight-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.highlight-caption { font-size: .9rem; margin-bottom: .5rem; }
+.highlight-media, .pub-thumb, .project-thumb { aspect-ratio: 16 / 10; }
+.highlight-media img, .pub-thumb img, .project-thumb img, .project-thumb video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: .3rem;
+}
+.pub-entry, .project-card { display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: 1rem; align-items: center; margin-bottom: 1.25rem; }
+.pub-info p, .project-info p, .exp-info p { margin-bottom: .25rem; }
+.news-list { list-style: none; padding: 0; margin: 0 0 .5rem; }
+.news-date, .exp-date, .blog-preview-date { color: #595661; min-width: 5rem; }
+.news-list li, .exp-entry, .blog-preview-item { display: flex; gap: .75rem; margin-bottom: .5rem; }
+.pub-note, .pub-venue, .project-tldr, .blog-preview-tag, .footer { color: #595661; }
+.footer { margin-top: 3rem; font-size: .9rem; }
+@media (max-width: 760px) {
+  #intro { flex-direction: column-reverse; gap: 1rem; }
+  #intro-image { flex: none; width: 12rem; max-width: 100%; margin-top: 0; }
+}
+@media (max-width: 480px) {
+  .highlight-grid, .pub-entry, .project-card { grid-template-columns: 1fr; }
+  .pub-thumb, .project-thumb, .highlight-media { width: min(100%, 15rem); }
+  .blog-preview-item { flex-wrap: wrap; }
+}
