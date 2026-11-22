@@ -3,10 +3,10 @@
 body {
   margin: 0;
   color: #150c21;
-  background: #fdf9f4;
+  background: #fff;
   font: 1rem/1.5 Asap, system-ui, sans-serif;
 }
-#main { max-width: 46.5rem; margin: auto; padding: 3rem 1.25rem 5rem; }
+#main { max-width: 56.5rem; margin: auto; padding: 6rem 1.25rem 5rem; }
 a { color: #146ebe; text-decoration: none; }
 a:hover { text-decoration: underline; }
 h1 { font-size: 2.4rem; font-weight: 500; margin: 0 0 1rem; }
@@ -17,6 +17,24 @@ p { margin: 0 0 1rem; }
 #intro-text { flex: 1; }
 #intro-image { flex: 0 0 12rem; margin-top: 4.6rem; }
 #intro-image img { display: block; width: 100%; border-radius: .3rem; }
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
+  margin-top: 2.5rem;
+  border-bottom: 1px solid #dedde2;
+}
+.section-nav a {
+  padding: .5rem 0;
+  border-bottom: 2px solid transparent;
+  color: #595661;
+}
+.section-nav a:hover, .section-nav a[aria-current="location"] {
+  color: #146ebe;
+  text-decoration: none;
+}
+.section-nav a[aria-current="location"] { border-bottom-color: currentColor; }
+[hidden] { display: none !important; }
 .social-links, .pub-links, .project-links { display: flex; gap: .8rem; flex-wrap: wrap; }
 .section { margin-top: 2rem; }
 .highlight-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
@@ -37,6 +55,7 @@ p { margin: 0 0 1rem; }
 .pub-note, .pub-venue, .project-tldr, .blog-preview-tag, .footer { color: #595661; }
 .footer { margin-top: 3rem; font-size: .9rem; }
 @media (max-width: 760px) {
+  #main { padding-top: 2rem; }
   #intro { flex-direction: column-reverse; gap: 1rem; }
   #intro-image { flex: none; width: 12rem; max-width: 100%; margin-top: 0; }
 }
