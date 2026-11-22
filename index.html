@@ -5,18 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Chuanke Pang, PhD student at Beihang University researching robotic manipulation and foundation models.">
   <title>Chuanke Pang | 庞传科</title>
-  <link rel="stylesheet" href="main.css?v=3">
+  <link rel="stylesheet" href="main.css?v=4">
   <script src="sections.js" defer></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 </head>
 <body>
 <main id="main">
   <section id="about" aria-label="About">
     <div id="intro">
       <div id="intro-text">
-      <h1 class="about-name">Chuanke Pang | 庞传科</h1>
+      <h1 class="about-name">Chuanke Pang <span class="name-zh" lang="zh">| 庞传科</span></h1>
       <p class="about-title">PhD Student, Beihang University</p>
       <p class="about-bio">I am currently pursuing my PhD degree in the Robotics Institute at <a href="https://www.buaa.edu.cn/" target="_blank" rel="noopener">Beihang University (BUAA)</a>. Before that, I received my B.S. degree from the School of Mechatronics Engineering at <a href="https://www.hit.edu.cn/" target="_blank" rel="noopener">Harbin Institute of Technology (HIT)</a>, Harbin, China, and my M.S. degree from the School of Astronautics at Beihang University, Beijing, China.</p>
       <p class="about-bio">My research lies at the intersection of <strong>robot manipulation</strong> and <strong>robotic foundation models</strong>, with broader interests in <strong>embodied intelligence</strong>, <strong>robot learning</strong>, and robotics.</p>
@@ -39,18 +36,27 @@
     <a href="#education">Education</a>
   </nav>
 
-  <section id="highlights" class="section"><div>
+  <section id="highlights" class="section" aria-label="Highlights">
     <div class="highlight-grid">
-      <div class="highlight-item"><div class="highlight-caption">ICRA WBCD 2026</div><div class="highlight-media"><img src="assets/proj/wbcd2026.JPG" alt="Deformable object manipulation in the WBCD 2026 competition" loading="lazy"></div></div>
-      <div class="highlight-item"><div class="highlight-caption"><a href="https://arxiv.org/abs/2606.12109v2">InDex</a></div><div class="highlight-media"><img src="assets/pub/index.png" alt="InDex project teaser" loading="lazy"></div></div>
-      <div class="highlight-item"><div class="highlight-caption">Dexterous Teleoperation</div><div class="highlight-media"><img src="assets/proj/teleoperation.png" alt="Dexterous teleoperation system" loading="lazy"></div></div>
+      <a class="highlight-item" href="https://wbcdcompetition.github.io/">
+        <span class="highlight-caption">WBCD 2026</span>
+        <div class="highlight-media"><img src="assets/proj/wbcd2026.JPG" alt="Deformable object manipulation at the WBCD competition"></div>
+      </a>
+      <a class="highlight-item" href="https://arxiv.org/abs/2606.12109v2">
+        <span class="highlight-caption">InDex</span>
+        <div class="highlight-media"><img src="assets/pub/index.png" alt="InDex project teaser"></div>
+      </a>
+      <a class="highlight-item" href="#projects">
+        <span class="highlight-caption">Teleoperation</span>
+        <div class="highlight-media"><img src="assets/proj/teleoperation.png" alt="Dexterous teleoperation system"></div>
+      </a>
     </div>
-  </div>
-  <div id="news" class="news">
-    <h2 class="section-title">News</h2>
-    <ul class="news-list"><li><span class="news-date">Jun 2026</span><span class="news-content">Won <span class="news-highlight">Best Innovation</span> for Complex Environments in Deformable Object Manipulation at the <a href="https://wbcdcompetition.github.io/" target="_blank" rel="noopener">ICRA WBCD 2026 Competition</a>!</span></li></ul>
-    <ul class="news-list"><li><span class="news-date">Oct 2026</span><span class="news-content"><span class="news-highlight">InDex</span> is accepted to <strong>IEEE Humanoids 2026</strong>!</span></li></ul>
-  </div></section>
+
+    <ul id="news" class="news-list" aria-label="News">
+      <li><time class="news-date" datetime="2026-06">Jun 2026</time><span><strong>Best Innovation for Complex Environments</strong> at <a href="https://wbcdcompetition.github.io/">ICRA WBCD 2026</a></span></li>
+      <li><time class="news-date" datetime="2026-10">Oct 2026</time><span><a href="https://arxiv.org/abs/2606.12109v2">InDex</a> at <strong>IEEE Humanoids 2026</strong></span></li>
+    </ul>
+  </section>
 
   <section id="publications" class="section"><div>
     <p class="pub-note">* denotes equal contribution or alphabetical ordering. See also my <a href="https://scholar.google.com.hk/citations?user=Mr7Dx6gAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a> profile.</p>
