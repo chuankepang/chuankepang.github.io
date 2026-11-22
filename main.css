@@ -30,13 +30,13 @@ h4 { font-size: 1rem; line-height: 1.5; font-weight: 400; margin: 0; }
 p { margin: 0 0 1rem; }
 #intro { display: flex; gap: 2rem; align-items: flex-start; }
 #intro-text { flex: 1; }
-#intro-image { flex: 0 0 12rem; margin-top: 2rem; }
+#intro-image { flex: 0 0 12rem; margin-top: .365rem; }
 #intro-image img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 1rem; }
+.intro-email { margin: 0; }
 .section-nav {
   display: flex;
   flex-wrap: wrap;
   column-gap: 1.6rem;
-  border-bottom: 1px solid #a0a8b0;
 }
 .section-nav a {
   /* Ted's native buttons use the browser's Arial control font. */
@@ -46,9 +46,7 @@ p { margin: 0 0 1rem; }
   font-weight: 400;
   margin-top: .5em;
   color: #a0a8b0;
-  box-shadow: inset 0 -2px transparent;
 }
-.section-nav a[aria-current="location"] { box-shadow: inset 0 -2px currentColor; }
 .section-nav a:hover, .section-nav a[aria-current="location"] {
   color: #150c21;
   text-decoration: none;
@@ -58,10 +56,8 @@ p { margin: 0 0 1rem; }
 .section { margin-top: 1rem; }
 .highlight-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 10px; }
 .highlight-item { display: grid; grid-template-rows: subgrid; grid-row: span 2; min-width: 0; }
-.highlight-item:hover { text-decoration: none; }
-.highlight-item:hover .highlight-caption { text-decoration: underline; }
 .highlight-caption { padding-bottom: .75rem; overflow-wrap: anywhere; }
-.highlight-media { aspect-ratio: 16 / 9; }
+.highlight-media { display: block; aspect-ratio: 16 / 9; }
 .highlight-media img, .pub-thumb img, .project-thumb img, .project-thumb video {
   display: block;
   width: 100%;
