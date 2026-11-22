@@ -28,9 +28,9 @@ h1 { font-size: 2.4rem; line-height: 3; font-weight: 500; margin: 0; }
 .name-zh { white-space: nowrap; }
 h4 { font-size: 1rem; line-height: 1.5; font-weight: 400; margin: 0; }
 p { margin: 0 0 1rem; }
-#intro { display: flex; gap: 2rem; align-items: flex-start; }
+#intro { display: flex; gap: 2rem; align-items: flex-end; }
 #intro-text { flex: 1; }
-#intro-image { flex: 0 0 12rem; margin-top: .365rem; }
+#intro-image { flex: 0 0 12rem; }
 #intro-image img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 1rem; }
 .intro-email { margin: 1lh 0 0; padding-bottom: 1lh; }
 .section-nav {
@@ -75,8 +75,8 @@ p { margin: 0 0 1rem; }
 .footer { margin-top: 3rem; font-size: .9rem; }
 @media (max-width: 760px) {
   #main { padding-top: 2rem; }
-  #intro { flex-direction: column-reverse; gap: 1rem; }
-  #intro-image { flex: none; width: 12rem; max-width: 100%; margin-top: 0; }
+  #intro { flex-direction: column-reverse; align-items: stretch; gap: 1rem; }
+  #intro-image { flex: none; align-self: flex-start; width: 12rem; max-width: 100%; }
   h1 { line-height: 1.2; margin: .5rem 0 1rem; }
 }
 @media (max-width: 480px) {
