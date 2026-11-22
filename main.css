@@ -64,9 +64,8 @@ p { margin: 0 0 1rem; }
   border-radius: 5px;
 }
 .highlight-media img { height: 100%; object-fit: contain; }
-.pub-thumb, .project-thumb { padding-top: .4rem; }
 .pub-thumb img, .project-thumb img, .project-thumb video { height: auto; }
-.pub-entry, .project-card { display: grid; grid-template-columns: 18% minmax(0, 1fr); gap: 2%; align-items: start; margin-bottom: 1rem; }
+.pub-entry, .project-card { display: grid; grid-template-columns: 18% minmax(0, 1fr); gap: 2%; align-items: center; margin-bottom: 1rem; }
 .pub-info p, .project-info p, .exp-info p { margin: 0; }
 .pub-venue { font-style: italic; }
 .news-list { list-style: none; padding: 0; margin: 1rem 0 0; }
