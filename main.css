@@ -71,8 +71,7 @@ p { margin: 0 0 1rem; }
 .news-list { list-style: none; padding: 0; margin: 1rem 0 0; }
 .news-date, .exp-date { flex: 0 0 5rem; color: #a0a8b0; }
 .news-list li, .exp-entry { display: flex; gap: .75rem; margin-bottom: .5rem; }
-.pub-note, .pub-authors, .pub-venue, .project-tldr, .footer { color: #a0a8b0; }
-.footer { margin-top: 3rem; font-size: .9rem; }
+.pub-note, .pub-authors, .pub-venue, .project-tldr { color: #a0a8b0; }
 @media (max-width: 760px) {
   #main { padding-top: 2rem; }
   #intro { flex-direction: column-reverse; align-items: stretch; gap: 1rem; }
